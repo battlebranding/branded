@@ -1,0 +1,221 @@
+/*
+Theme Name: Branded
+Author: Marcus Battle
+Author URI: https://marcusbattle.com
+Description: 
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: branding, creative, portfolio
+Text Domain: bb_branded
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+body {
+	background-color: #fbfbfb;
+	font-family: "Open Sans", sans-serif;
+}
+
+.stage {
+	display: block;
+	max-width: 1180px;
+	margin: 80px auto;
+}
+
+.header {
+	padding: 20px 0;
+	margin-bottom: 40px;
+
+	.column {
+		padding: 0;
+	}
+
+}
+
+.footer {
+	background-color: #ededed;
+	min-height: 200px;
+	padding: 80px;
+	text-align: center;
+
+	p {
+		font-size: 15px;
+	}
+
+}
+
+.quote {
+	padding: 80px;
+	background-color: #f4f2f2;
+
+	p {
+		font-size: 32px;
+		line-height: 38px;
+		font-weight: 100;
+	}
+
+}
+
+.row {
+	&.white {
+		background-color: #fff;
+	}
+
+	&.red {
+		background-color: #cf2037;
+
+		p {
+			color: #fff;
+		}
+
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+
+}
+
+.column {
+	padding: 80px;
+}
+
+.logo {
+
+	img {
+		max-width: 300px;
+	}
+
+}
+
+/** Headers **/
+h1 {
+	padding: 0;
+	margin: 0;
+}
+
+h3 {
+	font-size: 36px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	line-height: 36px;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+h4 {
+	font-size: 20px;
+	line-height: 20px;
+	font-weight: 200;
+	color: #888;
+	font-style: italic;
+	margin-bottom: 40px;
+}
+
+/** Typograhpy **/
+p {
+	font-size: 17px;
+	font-weight: 300;
+	color: #4c4c4c;
+}
+
+/** Forms **/
+input,
+select,
+textarea {
+	padding: 10px; 
+	border-radius: 0;
+
+	/* Bootstrap Specific Styles */
+	&.form-control {
+		padding: 20px; 
+		border-radius: 0;
+	}
+
+}
+
+button {
+	height: 44px;
+	border-radius: 0px;
+}
+
+/** WooCommerce **/
+.woocommerce { 
+
+	div.product {
+		
+		.product_title {
+			font-size: 30px;
+			line-height: 38px;
+			text-transform: uppercase;
+			border-bottom: 1px solid #e5e5e5;
+			padding-bottom: 40px;
+			margin-bottom: 27px;
+		}
+
+		div.images {
+			float: right;
+		}
+
+		div.summary {
+			float: left;
+
+			.price {
+				font-size: 24px;
+				line-height: 24px;
+				font-weight: 700;
+				color: #1b1b1b;
+				margin-bottom: 28px;
+				float: left;
+			}
+
+			div[itemprop="description"] {
+				clear: left;
+				border-top: 1px solid #e5e5e5;
+				padding-top: 40px;
+				font-size: 15px;
+				line-height: 25px;
+			}
+
+		}
+
+		.cart {
+			padding: 30px 0 15px;
+
+			input[type=number]::-webkit-inner-spin-button, 
+			input[type=number]::-webkit-outer-spin-button { 
+				-webkit-appearance: none; 
+				margin: 0; 
+			}
+
+		}
+
+		.panel {
+			background-color: transparent;
+
+			h2 {
+				display: none;
+			}
+
+		}
+
+		.woocommerce-tabs {
+
+			ul.tabs {
+
+				li {
+					text-transform: uppercase;
+					font-size: 13px;
+					padding: 10px 15px;
+					border-radius: 0px;
+				}
+
+			}
+
+		}
+
+	}
+
+}
