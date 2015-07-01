@@ -11,7 +11,7 @@
 			<div class="col-md-12 column">
 				<h3>Anger Management<br />Workshop</h3>
 				<h4>It's time for you to regain control</h4>
-				<p>On July 18th, 2015, 8 strangers will come together at Lake Brandt (Greensboro, NC) for a fun but intense morning of activities to learn practical ways of overcoming anger.</p>
+				<p>On July 18th, 2015, 8 strangers will come together at Bryan Park (Greensboro, NC) for a fun but intense morning of activities to learn practical ways of overcoming anger.</p>
 				<br />
 				<table class="table">
 					<tr>
