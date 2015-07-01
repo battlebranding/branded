@@ -24,7 +24,7 @@
 					</tr>
 					<tr>
 						<td>Location</td>
-						<td>Lake Brandt<br />5945 Lake Brandt Rd<br />Greensboro, NC 27455</td>
+						<td>Bryan Park<br />6275 Bryan Park Rd<br />Browns Summit, NC</td>
 					</tr>
 					<tr>
 						<td>Instructor</td>
