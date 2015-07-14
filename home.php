@@ -32,7 +32,7 @@
 					</tr>
 					<tr>
 						<td>Cost</td>
-						<td>$30 USD - Includes breakfast, boat rental and supplies</td>
+						<td>$15 USD - Includes breakfast, boat rental and supplies</td>
 					</tr>
 				</table>
 				<a class="btn btn-default" href="<?php echo home_url('/product/anger-management-workshop/'); ?>" >Register Now</a>
