@@ -12,13 +12,45 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 body {
-  background-color: #fbfbfb;
-  font-family: "Open Sans", sans-serif; }
+  background-color: #fbfbfb; }
 
 .stage {
+  max-width: 1600px;
+  width: 100%;
+  margin: 50px auto;
+  padding: 0px 60px; }
+
+.block {
+  background-color: #fff; }
+  .block.pad {
+    padding: 100px 70px; }
+
+.title {
+  font-size: 60px;
+  font-weight: 100; }
+
+p {
+  font-size: 18px;
+  margin-top: 33px;
+  color: #777;
+  font-family: sans-serif;
+  font-weight: 300; }
+
+.progress.large {
+  height: 44px; }
+  .progress.large .progress-bar {
+    line-height: 44px;
+    font-size: 14px; }
+
+.spacer {
   display: block;
-  max-width: 1180px;
-  margin: 80px auto; }
+  width: 100%;
+  height: 50px;
+  background-color: transparent; }
+
+ul {
+  font-size: 18px;
+  font-weight: 200; }
 
 .header {
   padding: 20px 0;
@@ -62,28 +94,27 @@ h1 {
   padding: 0;
   margin: 0; }
 
+h2 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 30px; }
+
 h3 {
-  font-size: 36px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  font-size: 26px;
   line-height: 36px;
   margin-top: 0;
   margin-bottom: 20px; }
 
 h4 {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 20px;
-  font-weight: 200;
+  font-weight: 500;
   color: #888;
-  font-style: italic;
-  margin-bottom: 40px; }
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 10px; }
 
 /** Typograhpy **/
-p {
-  font-size: 17px;
-  font-weight: 300;
-  color: #4c4c4c; }
-
 /** Forms **/
 input,
 select,
@@ -96,10 +127,6 @@ textarea {
   textarea.form-control {
     padding: 20px;
     border-radius: 0; }
-
-button {
-  height: 44px;
-  border-radius: 0px; }
 
 /** WooCommerce **/
 .woocommerce div.product .product_title {
@@ -141,5 +168,13 @@ button {
   font-size: 13px;
   padding: 10px 15px;
   border-radius: 0px; }
+
+@media screen and (max-width: 480px) {
+  .stage {
+    padding: 0;
+    margin: 0; }
+
+  .block .section {
+    margin-bottom: 40px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -2,7 +2,21 @@
 
 class Branded_Theme {
 
-	public function __construct() {
+	protected static $single_instance = null;
+
+	static function init() {
+
+		if ( self::$single_instance === null ) {
+			self::$single_instance = new self();
+		} 
+
+		return self::$single_instance;
+
+	}
+
+	public function __construct() { }
+
+	public function hooks() {
 
 		add_action( 'wp_enqueue_scripts', array( $this, 'theme_enqueue_styles' ) );
 		add_action( 'after_setup_theme', array( $this, 'woocommerce_support' ) );
@@ -23,7 +37,10 @@ class Branded_Theme {
 	public function theme_enqueue_styles() {
 	    
 	    wp_enqueue_style( 'lato', 'http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' );
+	    wp_enqueue_style( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css' );
 	    wp_enqueue_style( 'branded', get_template_directory_uri() . '/style.css' );
+	    
+	    wp_enqueue_script( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js', array('jquery') );
 
 	}
 
@@ -51,4 +68,4 @@ class Branded_Theme {
 
 }
 
-$branded = new Branded_Theme();
+add_action( 'after_setup_theme', array( Branded_Theme::init(), 'hooks' ) );
