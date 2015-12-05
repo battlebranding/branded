@@ -41,6 +41,8 @@ class Branded_Theme {
 	    wp_enqueue_style( 'branded', get_template_directory_uri() . '/style.css' );
 	    
 	    wp_enqueue_script( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js', array('jquery') );
+	    wp_enqueue_script( 'branded', get_template_directory_uri() . '/assets/js/branded.js', array('jquery') );
+	    wp_enqueue_script( 'angular', get_template_directory_uri() . '/assets/js/angular.min.js', array('jquery') );
 
 	}
 
