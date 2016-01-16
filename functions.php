@@ -8,7 +8,7 @@ class Branded_Theme {
 
 		if ( self::$single_instance === null ) {
 			self::$single_instance = new self();
-		} 
+		}
 
 		return self::$single_instance;
 
@@ -35,12 +35,12 @@ class Branded_Theme {
 	}
 
 	public function theme_enqueue_styles() {
-	    
+
 	    wp_enqueue_style( 'lato', 'http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' );
-	    wp_enqueue_style( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css' );
+	    // wp_enqueue_style( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css' );
 	    wp_enqueue_style( 'branded', get_template_directory_uri() . '/style.css' );
-	    
-	    wp_enqueue_script( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js', array('jquery') );
+
+	    // wp_enqueue_script( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js', array('jquery') );
 	    wp_enqueue_script( 'branded', get_template_directory_uri() . '/assets/js/branded.js', array('jquery') );
 	    wp_enqueue_script( 'angular', get_template_directory_uri() . '/assets/js/angular.min.js', array('jquery') );
 
