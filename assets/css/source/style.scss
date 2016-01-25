@@ -55,7 +55,10 @@ a {
 /** Layout DOM **/
 section { position: relative; }
 
+.inner,
 .block {
+	margin: 0 auto;
+	position: relative;
 
 	&:before,
 	&:after {
@@ -64,11 +67,6 @@ section { position: relative; }
 	  clear: both;
 	}
 
-}
-
-.inner {
-	margin: 0 auto;
-	position: relative;
 }
 
 /** Layout Alignment **/
@@ -143,7 +141,7 @@ section { position: relative; }
 	text-align: center;
 	background-color: #fff;
 	border-radius: 5px;
-	padding: 12px 10px;
+	padding: 12px 20px;
 	color: #333;
 	font-size: 14px;
 
@@ -173,9 +171,50 @@ h1, h2, h3, h4, h5 {
 	padding: 0;
 }
 
+p {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 300;
+}
+
 .align-left { text-align: left; }
 .align-right { text-align: right; }
 .align-center { text-align: center; }
+
+.highlight {
+	display: inline;
+	background: #fff;
+	box-shadow: 10px 0 0 #fff, -10px 0 0 #fff;
+	color: #666666;
+	&:after {
+		content: " ";
+		display: block;
+		margin-bottom: 20px;
+	}
+
+}
+
+@media (max-width: 600px) {
+
+	.L,
+	.R {
+		float: none;
+		display: block;
+		clear: both;
+	}
+
+	.W25,
+	.W50 {
+		width: 100%;
+	}
+
+	.cushion-left-25 { padding-left: 12.5%; }
+	.cushion-right-25 { padding-right: 12.5%; }
+
+}
+
+
+
 
 
 
@@ -221,7 +260,8 @@ h1, h2, h3, h4, h5 {
 	background-color: transparent;
 }
 
-ul {
+ul,
+ol {
 	font-size: 18px;
 	font-weight: 200;
 }

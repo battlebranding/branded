@@ -41,14 +41,16 @@ a {
 section {
   position: relative; }
 
-.block:before, .block:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-.inner {
+.inner,
+.block {
   margin: 0 auto;
   position: relative; }
+  .inner:before, .inner:after,
+  .block:before,
+  .block:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 /** Layout Alignment **/
 .W75 {
@@ -197,7 +199,7 @@ section {
   text-align: center;
   background-color: #fff;
   border-radius: 5px;
-  padding: 12px 10px;
+  padding: 12px 20px;
   color: #333;
   font-size: 14px; }
   .button.see-through {
@@ -219,6 +221,11 @@ h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 0; }
 
+p {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300; }
+
 .align-left {
   text-align: left; }
 
@@ -228,6 +235,32 @@ h1, h2, h3, h4, h5 {
 .align-center {
   text-align: center; }
 
+.highlight {
+  display: inline;
+  background: #fff;
+  box-shadow: 10px 0 0 #fff, -10px 0 0 #fff;
+  color: #666666; }
+  .highlight:after {
+    content: " ";
+    display: block;
+    margin-bottom: 20px; }
+
+@media (max-width: 600px) {
+  .L,
+  .R {
+    float: none;
+    display: block;
+    clear: both; }
+
+  .W25,
+  .W50 {
+    width: 100%; }
+
+  .cushion-left-25 {
+    padding-left: 12.5%; }
+
+  .cushion-right-25 {
+    padding-right: 12.5%; } }
 .stage {
   max-width: 1600px;
   width: 100%;
@@ -258,7 +291,8 @@ h1, h2, h3, h4, h5 {
   height: 50px;
   background-color: transparent; }
 
-ul {
+ul,
+ol {
   font-size: 18px;
   font-weight: 200; }
 
