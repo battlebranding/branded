@@ -59,7 +59,10 @@ section {
 	box-sizing: border-box;
 }
 
+.inner,
 .block {
+	margin: 0 auto;
+	position: relative;
 
 	&:before,
 	&:after {
@@ -70,6 +73,7 @@ section {
 
 }
 
+<<<<<<< HEAD
 .inner {
 	margin: 0 auto;
 	position: relative;
@@ -81,6 +85,8 @@ section {
     border-bottom: 1px solid #CCC;
 }
 
+=======
+>>>>>>> 0e6dbe299a59892429940b5e213f0c19c2c1408e
 /** Layout Alignment **/
 .W75 { width: 75%; box-sizing: border-box; }
 .W50 { width: 50%; box-sizing: border-box; }
@@ -156,10 +162,11 @@ section {
 	text-align: center;
 	background-color: #fff;
 	border-radius: 5px;
-	padding: 12px 10px;
+	padding: 12px 20px;
 	color: #333;
 	font-size: 14px;
-
+	cursor: pointer;
+	
 	&.see-through {
 		background-color: transparent;
 		border: 3px solid #666;
@@ -191,9 +198,50 @@ h1, h2, h3, h4, h5 {
 	padding: 0;
 }
 
+p {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 300;
+}
+
 .align-left { text-align: left; }
 .align-right { text-align: right; }
 .align-center { text-align: center; }
+
+.highlight {
+	display: inline;
+	background: #fff;
+	box-shadow: 10px 0 0 #fff, -10px 0 0 #fff;
+	color: #666666;
+	&:after {
+		content: " ";
+		display: block;
+		margin-bottom: 20px;
+	}
+
+}
+
+@media (max-width: 600px) {
+
+	.L,
+	.R {
+		float: none;
+		display: block;
+		clear: both;
+	}
+
+	.W25,
+	.W50 {
+		width: 100%;
+	}
+
+	.cushion-left-25 { padding-left: 12.5%; }
+	.cushion-right-25 { padding-right: 12.5%; }
+
+}
+
+
+
 
 
 
@@ -239,7 +287,8 @@ h1, h2, h3, h4, h5 {
 	background-color: transparent;
 }
 
-ul {
+ul,
+ol {
 	font-size: 18px;
 	font-weight: 200;
 }
